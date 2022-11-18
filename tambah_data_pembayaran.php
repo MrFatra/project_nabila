@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>lahaula bae</title>
 </head>
+
 <body>
- 
+
 	<h2>DATA PEMBAYARAN SYAHRIAH</h2>
-	<br/>
-	<a href="index.html">KEMBALI</a>
-	<br/>
-	<br/>
+	<br />
+	<a href="index.php">KEMBALI</a>
+	<br />
+	<br />
 	<h3>TAMBAH DATA PEMBAYARAN</h3>
-	<form method="POST" action="tambah_aksi.php">
+	<form method="POST" action="proses_tambah_data_pembayaran.php">
 		<table>
-			<tr>			
+			<tr>
 				<td>Nama</td>
 				<td><input type="text" name="nama"></td>
 			</tr>
@@ -25,20 +27,21 @@
 				<td>Alamat</td>
 				<td><input type="text" name="alamat"></td>
 			</tr>
-			<tr>			
+			<tr>
 				<td>Tanggal Pembayaran</td>
 				<td><input type="date" name="tanggal_pembayaran"></td>
 			</tr>
-			<tr>			
+			<tr>
 				<td>Jumlah Pembayaran</td>
 				<td><input type="text" name="jumlah_pembayaran"></td>
 			</tr>
-			
+
 			<tr>
 				<td></td>
-				<td><input type="submit" value="Simpan" name="Simpan"></td>
-			</tr>		
+				<td><input type="submit" value="Simpan" name="simpan"></td>
+			</tr>
 		</table>
 	</form>
 </body>
+
 </html>

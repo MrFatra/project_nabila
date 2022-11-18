@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>bismillah</title>
 </head>
+
 <body>
- 
+
 	<h2>DATA SANTRI SYAHRIAH PONPES MIFTAHUL FALAH</h2>
-	<br/>
-	<a href="tambak.html">+ TAMBAH DATA</a>
-	<br/>
-	<br/>
+	<br />
+	<a href="tambah_data_santri.php">+ TAMBAH DATA</a>
+	<br />
+	<br />
 	<table border="1">
 		<tr>
 			<th>NO</th>
@@ -22,12 +24,12 @@
 			<th>Kecamatan</th>
 			<th>OPSI</th>
 		</tr>
-		<?php 
+		<?php
 		include 'koneksi.php';
 		$no = 1;
-		$data = mysqli_query($koneksi,"select * from data_santri ");
-		while($d = mysqli_fetch_array($data)){
-			?>
+		$data = mysqli_query($koneksi, "select * from data_santri ");
+		while ($d = mysqli_fetch_array($data)) {
+		?>
 			<tr>
 
 				<td><?php echo $no++; ?></td>
@@ -39,13 +41,14 @@
 				<td><?php echo $d['desa']; ?></td>
 				<td><?php echo $d['kecamatan']; ?></td>
 				<td>
-					<a href="editdata.php?id=<?php echo $d['id']; ?>">EDIT</a>
-					<a href="hapusdata.php?id=<?php echo $d['id']; ?>">HAPUS</a>
+					<a href="edit_data_santri.php?id=<?php echo $d['id']; ?>">EDIT</a>
+					<a href="hapus_data_santri.php?id=<?php echo $d['id']; ?>">HAPUS</a>
 				</td>
 			</tr>
-			<?php 
+		<?php
 		}
 		?>
 	</table>
 </body>
+
 </html>

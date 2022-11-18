@@ -47,8 +47,8 @@ if (isset($_POST['submit'])) {
 </head>
 
 <body>
-	<form action="index.html" method="post">
-
+	<!-- Take a look again here!  -->
+	<form action="" method="POST">
 
 		<div class="kotak_login">
 			<p class="tulisan_login">Silahkan login</p>
